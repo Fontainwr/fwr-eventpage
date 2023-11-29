@@ -1,7 +1,12 @@
-import Image from "next/image"
-import { assets } from "../app/utils/asset-utils"
+"use client";
+import Image from "next/image";
+import { assets } from "../app/utils/asset-utils";
+import { type Framwork, frameworks } from "./utils/framework-utils";
+import { useState, useEffect } from "react";
 
 export default function Home() {
+  const [currentFramework, setCurrentFramework] = useState(frameworks[0])
+
   return (
     <main> 
       <Image 
