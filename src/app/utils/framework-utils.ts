@@ -10,5 +10,5 @@ export const frameworks = [
     "svelte",
 ] as const;
 
-export type Framwork = (typeof frameworks) [number]; 
+export type Framework = (typeof frameworks) [number]; 
 

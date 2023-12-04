@@ -2,7 +2,7 @@
 import Image from "next/image";
 import { Poppins } from 'next/font/google';
 import { assets } from "../app/utils/asset-utils";
-import { type Framwork, frameworks } from "./utils/framework-utils";
+import { type Framework, frameworks } from "./utils/framework-utils";
 import { useState, useEffect } from "react";
 import { cn } from "./utils/tailwind-utils";
 
@@ -70,7 +70,14 @@ useEffect(() => {
       <div className="max-w-7xl mt-20 mx-auto">
         <div className="flex flex-col items-center relative z-10">
           <h1 className={`text-7xl max-w-3xl text-center leading-snug mb-12 ${poppins.className}`}>
-
+            <Image
+              alt="Figma Logo"
+              className="inline-block mr-8 -mt-2"
+              src={assets.figma}
+              width="50"
+              height="50"
+            />
+            to Framework will <span>never</span> be the same again
           </h1>
 
         </div>
